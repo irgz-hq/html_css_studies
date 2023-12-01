@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+
+        body {
+            background-color: rgb(46, 45, 45);
+        }
+        header {
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 6px 4px 8px 1px black;
+        }
+
+        nav {
+            background-color: gray;
+            padding: 10px;
+            box-shadow: 6px 4px 8px 1px black;
+        }
+
+        a {
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: blue;
+            text-decoration: overline;
+        }
+
+        main {
+            background-color: rgb(177, 108, 108);
+            margin: 10px;
+            padding: 26px;
+            box-shadow: 6px 4px 8px 1px rgb(0, 0, 0);
+            border-radius: 20px 30px 40px 50px;
+        }
+
+        section#assuntos {
+            background-color: rgb(216, 170, 170);
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 6px 4px 8px 1px black;
+        }
+
+        article {
+            background-color: rgb(133, 97, 97);
+            padding: 5px;
+            box-shadow: 6px 4px 8px 1px rgba(0, 0, 0, 0.534);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            border: 0px;
+            padding: 1px;
+            text-align: center;
+        }
+
+        footer > p {
+            margin: 0px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Meu site
+        </h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> 
+        <section id="assuntos">
+            Blablabla de sempre
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia qualquer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis molestias maiores magni laudantium voluptas dolore earum quibusdam nesciunt fugit aperiam, consequatur dolores deserunt esse mollitia pariatur enim corrupti quod.</p>
+                <aside>
+                    <p>Artigo sobre o Abreu</p>
+                </aside>
+            </article>
+        </section> 
+        
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Irgz</p>
+    </footer>
+</body>
+</html>

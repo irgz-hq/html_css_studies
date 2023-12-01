@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        /*
+        . classe
+        # id
+        : pseudoclasse
+        :: pseudoelemento
+        > filho
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: green;
+            text-decoration: underline;
+        }
+        .especial {
+            background-color: aquamarine;
+        }
+        .especial::before{
+            content: '>>';
+        }
+        .especial::after{
+            content: '<<';
+        }
+        a:active{
+            color: blueviolet;
+            text-decoration: overline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplos</h1>
+    <ul>
+        <a href="https://youtube.com" target="_blank">
+            <li>Youtube</li>
+        </a>
+            <li><a href="https://instagram.com" target="_blank" class="especial">Instagram</a></li>
+        <a href="https://facebook.com" target="_blank">
+            <li>Facebook</li>
+        </a>
+    </ul>
+</body>
+</html>
